@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivani's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header>
+    <div class="container">
+      <h1 class="logo">Shivani's Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showSection('home')">Home</a></li>
+          <li><a href="#" onclick="showSection('about')">About</a></li>
+          <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+          <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+          <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main>
+
+    
+    <section id="home" class="section active">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>SHIVANI PATIL</h2>
+            <p>Hi, I am a passionate Web Developer and BCA student. I love creating modern websites and learning new technologies in the IT field.</p>
+            <a href="#" class="btn" onclick="showSection('contact')">Hire Me</a>
+          </div>
+          <div class="hero-image">
+            <img src="./WhatsApp Image 2025-10-12 at 1.06.35 PM.jpeg" alt="Shivani's Photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I'm Shivani, a dedicated web developer with skills in HTML, CSS, and JavaScript. I enjoy designing user-friendly websites that look great on any device.</p>
+      <p>Currently, I'm pursuing my BCA from KLE BCA College, Nipani, and continuously learning new programming skills.</p>
+    </section>
+
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Python Programming</li>
+        <li>SQL</li>
+    
+      </ul>
+    </section>
+
+    
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Online Food Oder</h3>
+          <p>A simple interactive web project demonstrating DOM manipulation using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project">
+          <h3>Predictive model using Python</h3>
+          <p>This Project focused on transforming raw data into meaningful insights through the application of core ML techniques</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p>You can download my resume to know more about my education and experience.</p>
+      <br>
+      <br>
+      <a href="#" class="btn">Download PDF</a>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Email: shivanipatil1278@gmail.com</p>
+      <p>Phone: +91 1234 567891</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Shivani's Portfolio | All Rights Reserved</p>
+  </footer>
+  <script>
+    function showSection(sectionId) {
+      
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+
+      
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
